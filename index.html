@@ -9,12 +9,16 @@
     <link rel="shortcut icon" href="images/icons/title.png" type="image/x-icon">
 
     <!--adding fonts-->
+    <!--Inter font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-
+    <!--Miama font-->
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
+                
+    
     <!--linking css to html-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -26,8 +30,44 @@
 
 <body class="inter-normal">
     <header>
-       
+        <!--navbar starts here-->
+        <nav class="navbar display-flex">
 
+            <div class="nav-title">
+                <h4>Fitness</h4>
+            </div>
+            <div class="nav-list display-flex">
+                <div>
+                    <button class="btn-primary">Home</button>
+                </div>
+                <ul class="nav-links display-flex">
+                    <li><a href="" class="nav-link">Service</a></li>
+                    <li><a href="" class="nav-link">Contact</a></li>
+                    <li><a href="" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--navbar ends here-->
+
+        <!--banner starts here-->
+        <div class="banner display-flex">
+            <div class="banner-content">
+                <h1 class="banner-title">Get body in <span id="shape" class="miama-italic">shape </span>& stay healthy</h1>
+                <p class="banner-descrip">A huge selection of health and fitness content, healthy recipes and
+                    transformation stories to help you get fit and stay fit!</p>
+                <div class="banner-btns">
+                    <button class="btn-primary" id="join-btn">Join Club Now!</button>
+                    <button class="btn-primary" id="down-btn">Download App</button>
+                </div>
+            </div>
+
+            <div class="banner-dp">
+                <img src="images/Images 2.png" alt="">
+
+            </div>
+
+        </div>
+        <!--banner ends here-->
     </header>
 
     <main>
