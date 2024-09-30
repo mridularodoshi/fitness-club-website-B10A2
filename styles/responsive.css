@@ -1,3 +1,66 @@
 /* media query for small devices */
 @media screen and (max-width:576px) {
+    .navbar,.banner{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* navbar */
+    .hamburger-menu{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
+
+    /* banner */
+    .banner{
+        flex-direction: column;
+    }
+    #join-btn-small{
+        display: block;
+    }
+    #join-btn{
+        display: none;
+    }
+    #badge-one{
+        top: 50px;
+        right: -10px;
+        padding: 12px 18px;
+
+    }
+    #play-btn{
+        bottom: 259px;
+        right: 265px;
+        z-index: 2;
+    }
+    .badge-two{
+        bottom: 220px;
+        right: 150px;
+        z-index: 1;
+        padding: 15px;
+    }
+    #five-hun {
+        font-size: 1.9rem;
+    }
+    #three-hun{
+        font-size: 1.1rem;
+
+    }
+    #free {
+        font-size: 0.6rem;
+
+    }
+    #vid{
+        font-size: 0.8rem;
+    
+    }
+    
+}
+
+/* media query for medium devices */
+@media screen and (min-width:576px) and (max-width:992px){
+     /* banner */
+    .banner{
+        flex-direction: column;
+    }
 }
