@@ -23,10 +23,12 @@
 .display-flex {
     display: flex;
 }
-.display-none{
+
+.display-none {
     display: none;
 }
-.display-block{
+
+.display-block {
     display: block;
 }
 
@@ -42,12 +44,19 @@ header {
             rgba(30, 30, 30, 0.986) 75%,
 
             rgb(0, 0, 0) 100%);
+}
 
+main {
+    border: 1px solid green;
+    min-height: 715px;
+    background-color: rgb(0, 0, 0);
 
 }
 
+
 .navbar,
-.banner {
+.banner,
+main>section {
     max-width: 1060px;
     margin: 0 auto;
 
@@ -101,11 +110,13 @@ header {
     font-size: 2.25rem;
     font-weight: 800;
 }
-.hamburger-menu{
+
+.hamburger-menu {
     display: none;
     max-width: 24px;
     height: 24px;
 }
+
 /* banner styles */
 .banner {
     border: 2px solid purple;
@@ -117,14 +128,14 @@ header {
 .banner-content {
     /* border: 2px solid blue; */
     max-width: 520px;
-   
+
 
 }
 
 .banner-dp {
     /* border: 2px solid yellow; */
     position: relative;
-   
+
 }
 
 .banner-dp>img {
@@ -152,7 +163,7 @@ header {
 }
 
 .banner-btns {
-    margin-top: 28px;   
+    margin-top: 28px;
 }
 
 #down-btn {
@@ -169,18 +180,19 @@ header {
     border-radius: 42px;
     padding: 16px 40px;
 }
-#join-btn-small{
+
+#join-btn-small {
     border-radius: 42px;
     padding: 16px 40px;
 }
 
 #badge-one {
-    background-color: rgba(255, 255, 255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(10px);
 
-    /* max-width: 193px; */
+    width: max-content;
     padding: 17px 24px;
     height: 98px;
 
@@ -188,13 +200,15 @@ header {
     top: 120px;
     right: -50px;
 
-}   
-.badge-two{
-    background-color: rgba(255, 255, 255,0.1);
+}
+
+.badge-two {
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(10px);
 
+    width: max-content;
     padding: 17px 24px;
     height: 96px;
     align-items: center;
@@ -205,30 +219,109 @@ header {
     right: 250px;
 
 }
-#play-btn{
+
+#play-btn {
     position: absolute;
     bottom: 260px;
     right: 395px;
 
 }
+
 #five-hun {
     font-size: 2.5rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
 }
-#three-hun{
+
+#three-hun {
     font-size: 1.5rem;
     font-weight: 900;
-    color:rgb(250, 250, 249);
+    color: rgb(250, 250, 249);
 }
+
 #free {
     font-size: 0.8rem;
     font-weight: 400;
-    color:rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.65);
 }
-#vid{
+
+#vid {
     font-size: 1rem;
     font-weight: 400;
-    color:rgba(239, 237, 232, 0.65);
+    color: rgba(239, 237, 232, 0.65);
 
+}
+
+/* main section styles */
+main>section {
+    border: 2px solid red;
+    margin-top: 100px;
+}
+
+.section-title {
+    color: rgb(255, 255, 255);
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.section-descrip {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* habits section styles */
+.change-habits {
+    min-height: 452px;
+}
+
+.habit-content {
+    max-width: 671px;
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.habit-cards-container {
+    /* border: 1px solid purple; */
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.habit-card{
+    /* border: 1px solid greenyellow; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.card-descrip{
+    color: rgb(255, 255, 255,0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 6px;
+}
+.habit-card>img{
+    width: 90%;
+    border-radius: 50%;
+    border:5px solid rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+}
+
+/* run section styles */
+.run-extra-mile {
+    min-height: 371px;
+}
+
+/* team section styles */
+.meet-team {
+    min-height: 782px;
 }
