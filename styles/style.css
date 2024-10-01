@@ -33,7 +33,7 @@
 }
 
 header {
-    border: 2px solid green;
+    border: 2px solid black;
     min-height: 715px;
 
     background: linear-gradient(180deg,
@@ -47,7 +47,7 @@ header {
 }
 
 main {
-    border: 1px solid green;
+    border: 1px solid black;
     min-height: 715px;
     background-color: rgb(0, 0, 0);
 
@@ -119,7 +119,6 @@ main>section {
 
 /* banner styles */
 .banner {
-    border: 2px solid purple;
     gap: 167px;
     margin-top: 32px;
     align-items: center;
@@ -274,9 +273,11 @@ main>section {
 /* habits section styles */
 .change-habits {
     min-height: 452px;
+    border: none;
 }
 
-.habit-content {
+.habit-content,
+.team-content {
     max-width: 671px;
     /* border: 1px solid blue; */
     text-align: center;
@@ -287,41 +288,156 @@ main>section {
     /* border: 1px solid purple; */
     margin-top: 58px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
-.habit-card{
+
+.habit-card {
     /* border: 1px solid greenyellow; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .card-title {
     color: rgb(255, 255, 255);
     font-size: 1.125rem;
     font-weight: 600;
     margin-top: 30px;
 }
-.card-descrip{
-    color: rgb(255, 255, 255,0.5);
+
+.card-descrip {
+    color: rgb(255, 255, 255, 0.5);
     font-size: 0.9rem;
     font-weight: 400;
     text-align: center;
     margin-top: 6px;
 }
-.habit-card>img{
+
+.habit-card>img {
     width: 90%;
     border-radius: 50%;
-    border:5px solid rgba(255, 255, 255, 0.1);
+    border: 5px solid rgba(255, 255, 255, 0.1);
     object-fit: cover;
 }
 
 /* run section styles */
 .run-extra-mile {
     min-height: 371px;
+    background-color: rgb(34, 34, 34);
+    border: none;
+    border-radius: 18px;
+    padding: 40px;
+    gap: 165px;
+
 }
+
+.run-content {
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+
+.run-dp {
+    /* border: 1px solid green; */
+    width: 50%;
+}
+
+.run-dp>img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: none;
+    object-position: 67% 28%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+.run-content>button {
+    margin-top: 50px;
+    width: 50%;
+}
+
 
 /* team section styles */
 .meet-team {
     min-height: 782px;
+}
+
+.team {
+    min-height: 604px;
+    margin-top: 58px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+
+    
+}
+.team-card{
+    /* border: 1px solid pink; */
+    max-width:327px;
+    height: 272px;
+    border-radius: 18px;
+
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+.trainer-name{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+   
+}
+.trainer{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.team>:nth-child(1){
+   background:linear-gradient(180deg,
+   rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
+   , url(/images/trainer1.png);
+   background-position: center;
+   background-size: cover;
+}
+.team>:nth-child(2){
+    background:linear-gradient(180deg,
+    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
+    , url(/images/trainer2.png);
+   background-position: center;
+   background-size: cover;
+}
+.team>:nth-child(3){
+    background:linear-gradient(180deg,
+    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
+    , url(/images/trainer3.png);
+   background-position: center;
+   background-size: cover;
+}
+.team>:nth-child(4){
+    background:linear-gradient(180deg,
+    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
+    , url(/images/trainer4.png);
+   background-position: center;
+   background-size: cover;
+}
+.team>:nth-child(5){
+    background:linear-gradient(180deg,
+    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
+    , url(/images/trainer5.png);
+   background-position: center;
+   background-size: cover;
+}
+.team>:nth-child(6){
+    background:linear-gradient(180deg,
+    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
+    , url(/images/trainer6.png);
+   background-position: center;
+   background-size: cover;
 }
