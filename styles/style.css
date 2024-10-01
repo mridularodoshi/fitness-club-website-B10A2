@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    background-color: rgba(0, 0, 0);
+}
+
 /* adding fonts */
 /*inter*/
 .inter-normal {
@@ -33,7 +37,7 @@
 }
 
 header {
-    border: 2px solid black;
+    /* border: 2px solid blue; */
     min-height: 715px;
 
     background: linear-gradient(180deg,
@@ -47,7 +51,7 @@ header {
 }
 
 main {
-    border: 1px solid black;
+    /* border: 1px solid blue; */
     min-height: 715px;
     background-color: rgb(0, 0, 0);
 
@@ -81,7 +85,7 @@ main>section {
     /* border: 2px solid red; */
     justify-content: space-between;
     align-items: center;
-    margin-top: 57px;
+    padding-top: 57px;
 }
 
 .nav-list {
@@ -252,7 +256,7 @@ main>section {
 }
 
 /* main section styles */
-main>section {
+main section {
     border: 2px solid red;
     margin-top: 100px;
 }
@@ -273,11 +277,11 @@ main>section {
 /* habits section styles */
 .change-habits {
     min-height: 452px;
-    border: none;
 }
 
 .habit-content,
-.team-content {
+.team-content,
+.unique-content {
     max-width: 671px;
     /* border: 1px solid blue; */
     text-align: center;
@@ -325,7 +329,6 @@ main>section {
 .run-extra-mile {
     min-height: 371px;
     background-color: rgb(34, 34, 34);
-    border: none;
     border-radius: 18px;
     padding: 40px;
     gap: 165px;
@@ -373,15 +376,16 @@ main>section {
     background-color: rgba(255, 255, 255, 0.1);
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 
-    
+
 }
-.team-card{
+
+.team-card {
     /* border: 1px solid pink; */
-    max-width:327px;
+    max-width: 327px;
     height: 272px;
     border-radius: 18px;
 
@@ -389,55 +393,116 @@ main>section {
     justify-content: end;
     padding: 20px;
 }
-.trainer-name{
+
+.trainer-name {
     color: rgb(255, 255, 255);
     font-weight: 900;
-   
+
 }
-.trainer{
+
+.trainer {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
 }
 
-.team>:nth-child(1){
-   background:linear-gradient(180deg,
-   rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
-   , url(/images/trainer1.png);
-   background-position: center;
-   background-size: cover;
+.team>:nth-child(1) {
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer1.png);
+    background-position: center;
+    background-size: cover;
 }
-.team>:nth-child(2){
-    background:linear-gradient(180deg,
-    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
-    , url(/images/trainer2.png);
-   background-position: center;
-   background-size: cover;
+
+.team>:nth-child(2) {
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer2.png);
+    background-position: center;
+    background-size: cover;
 }
-.team>:nth-child(3){
-    background:linear-gradient(180deg,
-    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
-    , url(/images/trainer3.png);
-   background-position: center;
-   background-size: cover;
+
+.team>:nth-child(3) {
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer3.png);
+    background-position: center;
+    background-size: cover;
 }
-.team>:nth-child(4){
-    background:linear-gradient(180deg,
-    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
-    , url(/images/trainer4.png);
-   background-position: center;
-   background-size: cover;
+
+.team>:nth-child(4) {
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer4.png);
+    background-position: center;
+    background-size: cover;
 }
-.team>:nth-child(5){
-    background:linear-gradient(180deg,
-    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
-    , url(/images/trainer5.png);
-   background-position: center;
-   background-size: cover;
+
+.team>:nth-child(5) {
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer5.png);
+    background-position: center;
+    background-size: cover;
 }
-.team>:nth-child(6){
-    background:linear-gradient(180deg,
-    rgba(16, 16, 16, 0.416)-20%,rgba(16, 16, 16, 0.114) 90%)
-    , url(/images/trainer6.png);
-   background-position: center;
-   background-size: cover;
+
+.team>:nth-child(6) {
+    background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer6.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* unique section styles */
+.unique-section {
+    /* min-height: 500px; */
+
+}
+
+.unique-content {
+    /* border: 2px solid blue; */
+}
+
+.unique-parent {
+    margin:50px 20px;
+    /* border: 2px solid green; */
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.unique-parent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    filter: contrast(-100);
+}
+.icon1, .icon2, .icon3{
+    position: absolute;
+    top: 80px;
+    right: 130px;
+    font-size: 50px;
+}
+.unique-child-1 {
+    /* background-color: red; */
+    grid-column: 1/span 6;
+    grid-row: 1/span 2;
+    border-radius: 20%;
+    position: relative;
+    
+
+}
+
+.unique-child-2 {
+    /* background-color: green; */
+    grid-column: 7/span 6;
+    grid-row: 1/span 2;
+    border-radius: 20%;
+    position: relative;
+
+}
+
+.unique-child-3 {
+    /* background-color: blue; */
+    grid-column: 13/span 6;
+    grid-row: 1/span 2;
+    border-radius: 20%;
+    position: relative;
+
 }
