@@ -460,32 +460,6 @@ td{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* team section styles */
 .meet-team {
     min-height: 782px;
@@ -528,43 +502,49 @@ td{
 }
 
 .team>:nth-child(1) {
-    background: linear-gradient(180deg,
-            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer1.png);
+    /* background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%); */
+    background-image: url(../images/trainer1.png);
     background-position: center;
     background-size: cover;
 }
 
 .team>:nth-child(2) {
-    background: linear-gradient(180deg,
-            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer2.png);
+    /* background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%); */
+    background-image: url(../images/trainer2.png);
     background-position: center;
     background-size: cover;
 }
 
 .team>:nth-child(3) {
-    background: linear-gradient(180deg,
-            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer3.png);
+    /* background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%); */
+    background-image: url(../images/trainer3.png);
     background-position: center;
     background-size: cover;
 }
 
 .team>:nth-child(4) {
-    background: linear-gradient(180deg,
-            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer4.png);
+    /* background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%); */
+    background-image: url(../images/trainer4.png);
     background-position: center;
     background-size: cover;
 }
 
 .team>:nth-child(5) {
-    background: linear-gradient(180deg,
-            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer5.png);
+    /* background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%); */
+    background-image: url(../images/trainer5.png);
     background-position: center;
     background-size: cover;
 }
 
 .team>:nth-child(6) {
-    background: linear-gradient(180deg,
-            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%), url(/images/trainer6.png);
+    /* background: linear-gradient(180deg,
+            rgba(16, 16, 16, 0.416)-20%, rgba(16, 16, 16, 0.114) 90%); */
+    background-image: url(../images/trainer6.png);
     background-position: center;
     background-size: cover;
 }
