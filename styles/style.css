@@ -258,7 +258,7 @@ main>section {
 
 /* main section styles */
 main section {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: 100px;
 }
 
@@ -273,6 +273,7 @@ main section {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
     font-weight: 400;
+    
 }
 
 /* habits section styles */
@@ -363,6 +364,126 @@ main section {
     margin-top: 50px;
     width: 50%;
 }
+/* BMI styles */
+.bmi1{
+    
+}
+.bmi-head{
+    /* border: 2px solid green; */
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.bmi2{
+    /* border: 2px solid red; */
+    min-height: 487px;
+    max-width:100%;
+    background: rgb(34, 34, 34);
+}
+.bmi-calc{
+    /* border: 2px solid red; */
+    max-width: 1060px;
+    margin: 0 auto;
+    min-height: 487px;
+}
+.chart{
+    /* border: 2px solid blue; */
+    width: 40%;
+}
+.chart-title{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin: 52px 0px;
+
+}
+table, td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 310px;
+    min-height: 216px;
+    border-collapse: collapse;
+   
+}
+th{
+   color:rgb(255, 255, 255);
+   font-size: 1rem;
+   font-weight: 500;
+   padding: 15px;
+   text-align: left;
+}
+td{
+    color:rgb(255, 255, 255,0.5);
+   font-size: 0.88rem;
+   font-weight: 400;
+   padding: 10px;
+
+}
+.Calculation{
+    /* border: 2px solid green; */
+    width: 60%;
+
+}
+.calculator{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    min-height: 168px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+.calculator-field{
+    /* border: 2px solid yellow; */
+    height: 100%;
+    border-radius: 8px;
+    
+}
+.calculator input, select{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+
+     background: rgba(255, 255, 255, 0.1);
+     padding: 15px;
+     color: rgba(255, 255, 255, 0.6);
+}
+#activity{
+    grid-column: span 2;
+    
+}
+.btn-calc{
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 16px 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* team section styles */
@@ -459,7 +580,7 @@ main section {
 }
 
 .unique-parent {
-    margin:50px 20px;
+    margin:50px 0px;
     /* border: 2px solid green; */
     min-height: 200px;
     display: grid;
